@@ -32,7 +32,7 @@
 #ifndef DEF_HPP
 #define DEF_HPP
 
-
+#define USE_STANDARD_LIB
 
 #endif /* DEF_HPP */
 
