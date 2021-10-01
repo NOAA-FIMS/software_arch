@@ -1,5 +1,5 @@
 /*
- * File:   model_engine.hpp
+ * File:   model.hpp
  *
  * Author: Matthew Supernaw
  * National Oceanic and Atmospheric Administration
@@ -29,8 +29,8 @@
  * Please cite the author(s) in any work or product based on this material.
  *
  */
-#ifndef MODEL_ENGINE_HPP
-#define MODEL_ENGINE_HPP
+#ifndef MODEL_HPP
+#define MODEL_HPP
 
 #include <memory>
 
@@ -57,5 +57,5 @@ namespace fims{
 
 
 
-#endif /* MODEL_ENGINE_HPP */
+#endif /* MODEL_HPP */
 
