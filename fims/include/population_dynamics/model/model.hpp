@@ -34,16 +34,16 @@
 
 #include <memory>
 
-#include "area/area.hpp"
-#include "population/population.hpp"
-#include "fleet/fleet.hpp"
-#include "survey/survey.hpp"
+#include "../area/area.hpp"
+#include "../population/population.hpp"
+#include "../fleet/fleet.hpp"
+#include "../survey/survey.hpp"
 
 
 namespace fims{
     
     template<typename T>
-    class model_engine{
+    class model{
         
         std::vector<std::shared_ptr<area<T> > areas;
         std::vector<std::shared_ptr<population<T> > populations;
