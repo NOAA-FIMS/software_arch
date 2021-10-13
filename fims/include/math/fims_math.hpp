@@ -61,6 +61,12 @@ namespace fims {
     
     
 #endif
+
+    namespace cstar{//common stock assessment routines
+        
+        
+        
+    }
     
 }
 
