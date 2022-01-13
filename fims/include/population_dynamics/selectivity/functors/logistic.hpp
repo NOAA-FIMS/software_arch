@@ -44,7 +44,7 @@ namespace fims {
         T slope;
 
         const T evaluate(const T& age) {
-            return fims::logistic_selectivity<T>(a50, slope, age);
+            return fims::logistic<T>(a50, slope, age);
         }
     };
 
