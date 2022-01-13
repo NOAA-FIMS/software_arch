@@ -44,12 +44,12 @@ namespace fims {
     
     
     template <class T>
-    const T exp(const T& x) {
+    inline const T exp(const T& x) {
         return std::exp(x);
     }
 
     template <class T>
-    const T log(const T& x) {
+    inline const T log(const T& x) {
         return std::log(x);
     }
 
