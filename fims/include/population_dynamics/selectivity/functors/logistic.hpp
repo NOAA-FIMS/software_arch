@@ -1,7 +1,7 @@
 /*
  * File:   logistic.hpp
  *
- * Author: Matthew Supernaw
+ * Author: Matthew Supernaw, Andrea Havron, Kelli Johnson
  * National Oceanic and Atmospheric Administration
  * National Marine Fisheries Service
  * Sustainable Fisheries Division
@@ -35,6 +35,7 @@
 
 #include "../../common/traits.hpp"
 #include "../../../math/fims_math.hpp"
+#include "selectivity_base.hpp"
 
 namespace fims {
 
@@ -43,7 +44,11 @@ namespace fims {
         T a50;
         T slope;
 
-        const T evaluate(const T& age) {
+        logistic_selectivity(): selectivity_base<T>(){
+            
+        }
+
+        virtual const T evaluate(const T& age) {
             return fims::logistic<T>(a50, slope, age);
         }
     };

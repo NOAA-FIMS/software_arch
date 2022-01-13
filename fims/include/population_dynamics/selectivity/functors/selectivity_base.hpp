@@ -1,7 +1,7 @@
 /*
  * File:   selectivity_base.hpp
  *
- * Author: Matthew Supernaw
+ * Author: Matthew Supernaw, Andrea Havron, Kelli Johnson
  * National Oceanic and Atmospheric Administration
  * National Marine Fisheries Service
  * Sustainable Fisheries Division
@@ -38,10 +38,19 @@ namespace fims{
     
     template<typename T>
     struct selectivity_base : public fims_object<T>{
+        static uint32_t id_g;
+
+selectivity_base(){
+    this->id=selectivity_base::id_g++;
+}
         
-        const T evaluate(const T& age) = 0;
+        virtual const T evaluate(const T& age) = 0;
+
         
     };
+template<typename T>
+uint32_t selectivity_base<T>::id_g=0; 
+
 }
 
 #endif /* SELECTIVITY_BASE_HPP */
