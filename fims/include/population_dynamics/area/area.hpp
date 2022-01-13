@@ -38,7 +38,15 @@ namespace fims {
 
     template<typename T>
     struct area : public fims_object<T> {
+       static  uint32_t id_g;
+       
+       area(){
+           this->id = area::id_g++;
+       }
     };
+    
+    template<typename T>
+    uint32_t area<T>::id_g = 0;
 }
 
 

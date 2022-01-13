@@ -33,6 +33,7 @@
 #define GROWTH_BASE_HPP
 
 #include "../../common/model_object.hpp"
+#include "../../../math/fims_math.hpp"
 
 namespace fims{
     
@@ -41,8 +42,16 @@ namespace fims{
      */
     template<typename T>
     struct growth_base : public fims_object<T>{
+        static uint32_t id_g;
+        growth_base(){
+            this->id = growth_base::id_g++;
+        }
+        
         virtual const T evaluate(const T& age) = 0;
     };
+    
+     template<typename T>
+     uint32_t growth_base<T>::id_g = 0;
 }
 
 

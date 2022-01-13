@@ -38,6 +38,26 @@ namespace fims {
 
     template<typename T>
     struct von_bertalanffy : public growth_base<T> {
+        T l_inf_;
+        T k_;
+        T a_min_;
+        
+        von_bertalanffy():growth_base<T>(){
+            
+        }
+        
+        /**
+         * von Bertalanffy growth curve.
+         * 
+         * @param age
+         * @return 
+         * 
+         * \f$l_inf * (1.0 - e^(-k*(age - a_min)))\f$ 
+         */
+        virtual const T evaluate(const T& age){
+            T ret = l_inf_ * (static_cast<T> (1.0) - fims::exp<T>(-1.0*k_ * (age - this->a_min_)));
+            return ret < T(0.0) ? T(0.0) : ret;
+        }
     };
     
 }

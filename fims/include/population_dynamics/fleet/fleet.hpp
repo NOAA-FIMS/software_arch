@@ -38,8 +38,15 @@ namespace fims{
     
     template<typename T>
     struct fleet: public fims_object<T>{
+        static uint32_t id_g;
+        
+        fleet(){
+            this->id = fleet::id_g++;
+        }
         
     };
+     template<typename T>
+     uint32_t fleet<T>::id_g = 0;
 }
 
 
