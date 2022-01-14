@@ -34,22 +34,22 @@
 
 #include "../../common/model_object.hpp"
 
-namespace fims{
-    
+namespace fims {
+
     template<typename T>
-    struct selectivity_base : public fims_object<T>{
+    struct SelectivityBase : public FIMSObject<T> {
         static uint32_t id_g;
 
-selectivity_base(){
-    this->id=selectivity_base::id_g++;
-}
-        
+        SelectivityBase() {
+            this->id = SelectivityBase::id_g++;
+        }
+
         virtual const T evaluate(const T& age) = 0;
 
-        
+
     };
-template<typename T>
-uint32_t selectivity_base<T>::id_g=0; 
+    template<typename T>
+    uint32_t SelectivityBase<T>::id_g = 0;
 
 }
 

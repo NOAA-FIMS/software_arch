@@ -43,11 +43,11 @@ namespace fims {
      * Contains all objects and data pre-model construction 
      */
     template<typename T>
-    class information {
-        typedef fims::fims_trait<T>::variable_t variable_t;
-        typedef fims::fims_trait<T>::real_t real_t;
-        std::map<uint32_t, std::shared_ptr<fims::mortality_base<T> > model_objects; //list of all created model objects
-        typedef typename std::map<uint32_t, std::shared_ptr<fims::mortality_base<T> >::iterator model_objects_iterator;
+    class Information {
+        typedef fims::FIMSTrait<T>::variable_t variable_t;
+        typedef fims::FIMSTrait<T>::real_t real_t;
+        std::map<uint32_t, std::shared_ptr<fims::MortalityBase<T> > model_objects; //list of all created model objects
+        typedef typename std::map<uint32_t, std::shared_ptr<fims::MortalityBase<T> >::iterator model_objects_iterator;
         std::vector<variable_t*> parameters; //list of all estimated parameters
         std::vector<variable_t*> random_effects; //list of all estimated random effects
         

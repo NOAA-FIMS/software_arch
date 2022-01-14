@@ -38,7 +38,7 @@
 namespace fims{
     
     template<typename T>
-    struct fims_object{
+    struct FIMSObject{
         uint32_t id;//unique identifier assigned for all fims objects
         std::vector<T*> parameters;//list of estimable parameters
         std::vector<T*> random_effects;//list of random effects

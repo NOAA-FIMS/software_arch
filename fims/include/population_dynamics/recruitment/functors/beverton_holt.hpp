@@ -37,7 +37,7 @@
 namespace fims {
 
     template<typename T>
-    struct beverton_holt : public recruitment_base<T> {
+    struct BevertonHolt : public RecruitmentBase<T> {
     };
 }
 

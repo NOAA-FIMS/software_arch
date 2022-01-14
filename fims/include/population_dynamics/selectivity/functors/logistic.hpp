@@ -40,11 +40,11 @@
 namespace fims {
 
     template<typename T>
-    struct logistic_selectivity : public selectivity_base<T> {
+    struct LogisticSelectivity : public SelectivityBase<T> {
         T a50;
         T slope;
 
-        logistic_selectivity(): selectivity_base<T>(){
+        LogisticSelectivity(): SelectivityBase<T>(){
             
         }
 

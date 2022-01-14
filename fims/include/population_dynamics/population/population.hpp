@@ -38,7 +38,7 @@
 namespace fims {
 
     template<typename T>
-    struct population<T> : fims_object<T> {
+    struct Population<T> : FIMSObject<T> {
     };
 }
 

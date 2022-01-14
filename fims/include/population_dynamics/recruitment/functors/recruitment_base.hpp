@@ -37,7 +37,7 @@
 namespace fims{
     
     template<typename T>
-    struct recruitment_base : public fims_object<T>{
+    struct RecruitmentBase : public FIMSObject<T>{
         
     };
 }

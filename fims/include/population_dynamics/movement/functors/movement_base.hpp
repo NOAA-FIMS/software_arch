@@ -37,7 +37,7 @@
 namespace fims {
 
     template<typename T>
-    struct movement_base : public fims_object<T> {
+    struct MovementBase : public FIMSObject<T> {
     };
 }
 

@@ -36,7 +36,7 @@
 namespace fims{
     
     template<typename T>
-    struct ricker: public recruitment_base<T>{
+    struct Ricker: public RecruitmentBase<T>{
         
     };
 }

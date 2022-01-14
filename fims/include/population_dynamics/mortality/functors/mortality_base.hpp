@@ -37,7 +37,7 @@
 namespace fims{
     
     template<typename T>
-    struct mortality_base : public fims_object<T>{
+    struct MortalityBase : public FIMSObject<T>{
         
     };
     

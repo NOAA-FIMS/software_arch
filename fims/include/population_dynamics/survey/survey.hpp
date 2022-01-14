@@ -35,7 +35,7 @@
 namespace survey{
     
     template<typename T>
-    struct survey{
+    struct Survey{
         
     };
 }

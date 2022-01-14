@@ -37,7 +37,7 @@
 namespace fims {
 
     template<typename T>
-    struct area : public fims_object<T> {
+    struct area : public FIMSObject<T> {
        static  uint32_t id_g;
        
        area(){

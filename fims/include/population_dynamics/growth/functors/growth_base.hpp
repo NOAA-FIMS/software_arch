@@ -41,17 +41,17 @@ namespace fims{
      *Base class that all FIMS growth functors inherit from.
      */
     template<typename T>
-    struct growth_base : public fims_object<T>{
+    struct GrowthBase : public FIMSObject<T>{
         static uint32_t id_g;
-        growth_base(){
-            this->id = growth_base::id_g++;
+        GrowthBase(){
+            this->id = GrowthBase::id_g++;
         }
         
         virtual const T evaluate(const T& age) = 0;
     };
     
      template<typename T>
-     uint32_t growth_base<T>::id_g = 0;
+     uint32_t GrowthBase<T>::id_g = 0;
 }
 
 

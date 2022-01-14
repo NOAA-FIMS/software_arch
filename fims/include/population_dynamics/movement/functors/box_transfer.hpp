@@ -37,7 +37,7 @@
 namespace fims {
 
     template<typename T>
-    struct box_transfer : public movement_base<T> {
+    struct BoxTransfer : public MovementBase<T> {
     };
 }
 
