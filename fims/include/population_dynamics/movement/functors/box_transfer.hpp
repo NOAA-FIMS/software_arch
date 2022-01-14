@@ -36,6 +36,9 @@
 
 namespace fims {
 
+    /**
+     * Box transfer movement model.
+     */
     template<typename T>
     struct BoxTransfer : public MovementBase<T> {
     };

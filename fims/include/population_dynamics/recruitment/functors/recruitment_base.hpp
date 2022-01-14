@@ -34,11 +34,18 @@
 
 #include "../../common/model_object.hpp"
 
-namespace fims{
-    
+namespace fims {
+
+    /**
+     * Recruitment base class.
+     */
     template<typename T>
-    struct RecruitmentBase : public FIMSObject<T>{
-        
+    struct RecruitmentBase : public FIMSObject<T> {
+        T log_R0; // virgin recruitment
+        T h; // steepness
+        T sigma_r; // recruitment standard deviation
+        bool use_bias_correction = false;
+
     };
 }
 

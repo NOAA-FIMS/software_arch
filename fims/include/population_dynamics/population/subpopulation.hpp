@@ -32,7 +32,17 @@
 #ifndef SUBPOPULATION_HPP
 #define SUBPOPULATION_HPP
 
+namespace fims {
 
+    /**
+     * Subpopulation class. This class represents a portion
+     * of a population in a area for a given sex.
+     */
+    template<typename T>
+    class Subpopulation {
+    };
+
+}
 
 #endif /* SUBPOPULATION_HPP */
 

@@ -33,6 +33,21 @@
 #define DOUBLE_LOGISTIC_HPP
 
 
+#include "selectivity_base.hpp"
+
+namespace fims{
+    
+    /**
+     * Double logistic selectivity class.
+     */
+    template<typename T>
+    struct DoubleLogisticSelectivity{
+        
+    };
+    
+    
+}
+
 
 #endif /* DOUBLE_LOGISTIC_HPP */
 

@@ -32,8 +32,13 @@
 #ifndef SURVEY_HPP
 #define SURVEY_HPP
 
-namespace survey{
+
+namespace fims{
     
+    
+    /**
+     * Survey class.
+     */
     template<typename T>
     struct Survey{
         

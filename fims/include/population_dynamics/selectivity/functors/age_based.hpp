@@ -32,7 +32,15 @@
 #ifndef AGE_BASED_HPP
 #define AGE_BASED_HPP
 
+#include "selectivity_base.hpp"
 
+namespace fims {
+
+    template<typename T>
+    struct AgeBasedSelectivity : public SelectivityBase<T> {
+    };
+
+}//end fims namespace
 
 #endif /* AGE_BASED_HPP */
 

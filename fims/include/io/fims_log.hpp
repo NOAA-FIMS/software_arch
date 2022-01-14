@@ -35,8 +35,15 @@
 #include <ofstream>
 #include <fstream>
 
-std::ofstream fims_log("fims.log");
+namespace fims {
 
+    /*
+     * Used to log all FIMS related warnings and
+     * errors.
+     */
+    std::ofstream log("fims.log");
+
+}
 
 #endif /* FIMS_LOG_HPP */
 

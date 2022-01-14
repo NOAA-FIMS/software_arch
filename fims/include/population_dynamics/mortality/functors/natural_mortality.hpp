@@ -36,6 +36,9 @@
 
 namespace fims{
     
+    /**
+     *Natural mortality base class
+     */
     template<typename T>
     struct NaturalMortality : MortalityBase<T>{
         

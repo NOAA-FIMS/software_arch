@@ -36,6 +36,9 @@
 
 namespace fims {
 
+    /**
+     * Movement base class.
+     */
     template<typename T>
     struct MovementBase : public FIMSObject<T> {
     };

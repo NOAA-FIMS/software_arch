@@ -36,6 +36,9 @@
 
 namespace fims{
     
+    /**
+     * Mortality base.
+     */
     template<typename T>
     struct MortalityBase : public FIMSObject<T>{
         

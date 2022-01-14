@@ -37,6 +37,10 @@
 
 namespace fims {
 
+    /**
+     * Population class. Contains subpopulations
+     * that are partitioned by sex and area.
+     */
     template<typename T>
     struct Population<T> : FIMSObject<T> {
     };

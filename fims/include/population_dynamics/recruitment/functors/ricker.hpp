@@ -33,11 +33,16 @@
 #define RICKER_HPP
 #include "recruitment_base.hpp"
 
-namespace fims{
-    
+namespace fims {
+
+    /**
+     * Ricker recruitment model.
+     */
     template<typename T>
-    struct Ricker: public RecruitmentBase<T>{
-        
+    struct Ricker : public RecruitmentBase<T> {
+        T alpha;
+        T beta;
+
     };
 }
 

@@ -36,8 +36,13 @@
 
 namespace fims {
 
+    /**
+     * Beverton-Holt recruitment model.
+     */
     template<typename T>
     struct BevertonHolt : public RecruitmentBase<T> {
+        T alpha; //maximum recruitment
+        T beta; //the stock level needed to produce the half of maximum recruitment
     };
 }
 

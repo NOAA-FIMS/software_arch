@@ -42,6 +42,9 @@
 
 namespace fims{
     
+    /**
+     * Model base
+     */
     template<typename T>
     class Model{
         
