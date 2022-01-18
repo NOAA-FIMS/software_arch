@@ -37,7 +37,7 @@
 namespace fims {
 
     template<typename T>
-    struct VonBertalanffy  : public GrowthBase<T> {
+    struct VonBertalanffy : public GrowthBase<T> {
         T l_inf_;
         T k_;
         T a_min_;
