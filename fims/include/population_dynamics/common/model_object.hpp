@@ -42,6 +42,11 @@ namespace fims{
         uint32_t id;//unique identifier assigned for all fims objects
         std::vector<T*> parameters;//list of estimable parameters
         std::vector<T*> random_effects;//list of random effects
+        
+        uint32_t getId() const {
+            return id;
+        }
+
     };
     
     
