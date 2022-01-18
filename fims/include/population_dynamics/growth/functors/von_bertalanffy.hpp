@@ -37,13 +37,13 @@
 namespace fims {
 
     template<typename T>
-    struct von_bertalanffy : public growth_base<T> {
+    struct VonBertalanffy  : public GrowthBase<T> {
         T l_inf_;
         T k_;
         T a_min_;
         
-        von_bertalanffy():growth_base<T>(){
-            
+        VonBertalanffy():GrowthBase<T>(){
+    
         }
         
         /**
