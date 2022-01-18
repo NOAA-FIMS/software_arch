@@ -48,7 +48,7 @@ namespace fims{
     template<typename T>
     class Model{
         
-        std::vector<std::shared_ptr<area<T> > areas;
+        std::vector<std::shared_ptr<Area<T> > areas;
         std::vector<std::shared_ptr<Population<T> > populations;
         std::vector<std::shared_ptr<Fleet<T> > fleets;
         std::vector<std::shared_ptr<survey<T> > surveys;

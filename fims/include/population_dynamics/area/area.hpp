@@ -37,16 +37,16 @@
 namespace fims {
 
     template<typename T>
-    struct area : public FIMSObject<T> {
+    struct Area : public FIMSObject<T> {
        static  uint32_t id_g;
        
-       area(){
-           this->id = area::id_g++;
+       Area(){
+           this->id = Area::id_g++;
        }
     };
     
     template<typename T>
-    uint32_t area<T>::id_g = 0;
+    uint32_t Area<T>::id_g = 0;
 }
 
 
